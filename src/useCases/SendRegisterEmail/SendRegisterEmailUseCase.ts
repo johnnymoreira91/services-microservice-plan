@@ -17,7 +17,7 @@ class SendRegisterEmailUseCase {
         email: 'suport@user-management.com'
       },
       subject: 'Welcame new user',
-      body: `<h1> Welcame ${data.name} to our server </h1>`
+      body: `<h3> Welcame ${data.name} to our server </h3>`
     })
   }
 }

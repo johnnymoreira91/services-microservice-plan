@@ -1,6 +1,7 @@
 import { IMailProvider, IMessage } from '../IMailProvider'
 import nodemailer from 'nodemailer'
 import Mail from 'nodemailer/lib/mailer'
+import ejs from 'ejs'
 
 class MailTrapMailProvider implements IMailProvider {
   private transporter: Mail
@@ -16,6 +17,11 @@ class MailTrapMailProvider implements IMailProvider {
   }
 
   async sendEmail (message: IMessage): Promise<void> {
+    const emailTemplate = await ejs.renderFile('src/infra/views/emailTemplate.ejs', {
+      title: '@user-management',
+      name: message.to.name,
+      email: message.to.email
+    })
     await this.transporter.sendMail({
       to: {
         name: message.to.name,
@@ -26,7 +32,7 @@ class MailTrapMailProvider implements IMailProvider {
         address: message.from.email
       },
       subject: message.subject,
-      html: message.body
+      html: emailTemplate
     })
   }
 }

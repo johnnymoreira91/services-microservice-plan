@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+      height: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+
+    .center {
+      text-align: center;
+      /* border: 3px solid green; */
+    }
+  </style>
+  <title>Register Email</title>
+</head>
+<body>
+  <div class="container .center">
+    Bem vindo <%= name %> <br>
+    Você agora já pode realizar o login com o email <br>
+    <%= email %> 
+  </div>
+
+  <footer>
+    <%= title %>
+  </footer>
+</body>
+</html>
