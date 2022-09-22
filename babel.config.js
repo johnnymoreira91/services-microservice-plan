@@ -18,7 +18,8 @@ module.exports = {
         '@repositories': './src/repositories',
         '@providers': './src/providers',
         '@useCases': './src/useCases',
-        '@utils': './src/utils'
+        '@utils': './src/utils',
+        '@shared': './src/shared'
       }
     }]
   ],
