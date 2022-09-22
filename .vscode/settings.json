@@ -1,0 +1,46 @@
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "beautify.language": {
+    "js": {
+      "type": [
+        "javascript",
+        "typescript",
+        "json"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautify"
+      ]
+    },
+    "css": [
+      "css",
+      "scss"
+    ],
+    "html": [
+      "htm",
+      "html"
+    ]
+  },
+  "window.zoomLevel": -2,
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "pug2html.compileOptions": {
+    "doctype": "html",
+    "pretty": true
+  },
+  "path-intellisense.extensionOnImport": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "markdown.preview.breaks": true,
+  "npm.autoDetect": "off",
+  "editor.fontLigatures": true,
+  "vsicons.projectDetection.autoReload": true,
+  "files.autoSave": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
